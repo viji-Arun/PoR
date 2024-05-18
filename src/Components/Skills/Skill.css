@@ -1,0 +1,17 @@
+.skill_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.skill_container> div{
+    background-color: rgb(204, 102, 204);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.skill_container> div:hover{
+    
+    background-color: rgb(151, 119, 182);
+    cursor:default;
+}

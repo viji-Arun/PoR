@@ -1,0 +1,84 @@
+.about_container{
+    display: grid;
+    grid-template-columns: 30% 50%;
+    gap: 15%;
+}
+.about_me{
+    width: 90%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(-50deg,transparent,var(--color-primary));
+    display: grid;
+    place-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.about_cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
+.about_card{
+    background: rgb(219, 163, 219);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: .6rem;
+    text-align: center;
+    transition: var(--transition);
+}
+.about_card:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+    cursor: default;
+    color: rgb(219, 25, 219);
+}
+.about_icon{
+    color: rgb(90, 10, 90);
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+}
+.about_card small{
+    font-size: .7rem;
+    color: var(--color-light);
+}
+.about_content h5{
+    font-size: 0.95rem;
+}
+.about_content p{
+    margin: 2rem 0 2.6rem;
+    color: var(--color-light);
+}
+.about_me_image {
+    background: linear-gradient(-45deg,transparent,var(--color-light));
+    background-color: plum;
+    border-radius: 1rem;
+    
+    width: 17rem;
+    height: 23rem;
+    transform: rotate(-13deg);
+    position: relative; /* Ensure proper positioning of child elements */
+  }
+.about_me_image img {
+    border-radius: 1rem;
+    width: 100%; /* Ensure image takes full width of container */
+    height: auto; /* Maintain aspect ratio */
+    transform: rotate(13deg);/* Rotate the image to slope from right to left */
+    position: absolute; /* Position the image relative to its container */
+    top: 0; /* Align image to the top of the container */
+    left: 0; /* Align image to the left of the container */
+    height: 22rem;
+    width: 15rem;
+    object-fit: cover;
+    margin: 12px;
+    transition: var(--transition);
+    opacity: 5px;
+}
+.about_me_image img:hover{
+  
+    transform: rotate(0);
+}
+.about_me_image:hover{
+  
+    transform: rotate(0);
+}
+  

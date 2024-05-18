@@ -1,0 +1,95 @@
+header{
+    height: 100vh;
+    padding-left: 6rem;
+    overflow: hidden;
+}
+.home_container{
+    text-align: center;
+    height: 100%;
+    position:relative;
+    margin-right: 10rem;
+}
+.cta{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+.home_social{
+    
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em;
+    position: absolute;
+    left: 0;
+    bottom: 5rem;
+}
+.home_social::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+.me{
+    background: linear-gradient(var(--color-primary), transparent);
+    background-color: black;
+  width: 25rem; /* Adjusted to ensure perfect circle */
+  height: 25rem; /* Height should match the width */
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   }
+   .me img {
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+    margin-bottom: -200px;
+    position: absolute;
+
+  }
+a.btn{
+    font-size: 30px;
+    color:rgb(175, 19, 180);
+    margin-right: 50rem;
+}
+a.btn.btn-primary{
+     margin-right: 20px;
+}
+
+.me > img{
+margin-left: 0.5rem;
+}
+.scroll_down{
+color: blue;
+position: absolute;
+right: -2.3rem;
+bottom: 5rem;
+transform: rotate(90deg);
+font-weight: 300;
+font-size: 20px;
+
+}
+@media  screen and (max-width:1024px) {
+    header{
+        height: 60vh;
+
+    }
+    
+}
+@media screen and (max-width:600px) {
+    header{
+        height: 100vh;
+    
+    
+}
+.home_social, .scroll_down{
+    display: none;
+}
+.me> img{
+    margin-top: 2.5rem;
+}
+}

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  /* Colors */
+  --color-bg: #581158; /* Example background color */
+  --color-bg-variant: #efe9f0; /* Example background variant color */
+  --color-primary: #bacadb; /* Example primary color */
+  --color-primary-variant: #20466e; /* Example primary variant color */
+  --color-white: #ffffff; /* Example white color */
+  --color-light: #78797a; /* Example light color */
+  
+  /* Sizes */
+  --container-width-lg: 70%; /* Example large container width */
+  --container-width-md: 86%; /* Example medium container width */
+  --container-width-sm: 90%; /* Example small container width */
+  
+  /* Transition */
+  --transition: all 400ms ease; /* Example transition */
+}
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  display: none;
+  }
+body{
+  font-family:'Times New Roman', Times, serif;
+  background: var(--color-bg);
+  color: var(--color-white);
+  line-height: 1.7;
+}
+.container{
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+section{
+  margin-top: 7rem;
+}
+section>h2,
+section>h5{
+  text-align: center;
+  color: rgb(231, 14, 231);
+}
+section>h2{
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
+h1,h5,h4,h2{
+  color: #af0c86;
+  font-size: 30px;
+  font-family:cursive;
+  font-weight: 500rem;
+}
+h1{
+  font-size: 2.5rem;
+  color: #4628ca;
+}
+.text-light{
+  color: var(--color-light);
+}
+.btn{
+  cursor: pointer ;
+  border-radius: 0.4rem;
+  transition: var(--transition);
+  display: inline-block;
+
+}
+.btn:hover{
+  color: #c50ba6;
+  transform: scale(2);
+  border-color: transparent;
+}
